@@ -1,25 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="leading-none">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
     <title>Tailwind Project</title>
   </head>
-  <body>
-    <header></header>
+  <body class="flex flex-col min-h-screen m-0 p-0">
+    <header
+      class="flex flex-col items-center justify-between p-4 m-0 bg-sky-200  md:flex-row md:flex-wrap md:justify-between md:items-center"
+    >
+      <div class="flex items-center space-x-4">
+        <img src="logo2.svg" alt="Logo" class="h-20 w-20" />
+        <h1
+          class="flex text-5xl text-center m-0"
+          style="font-family: quicksand; color: #0048af"
+        >
+          Wander
+          <span class="text-orange-400" style="font-family: yellowtail"
+            >Lust</span
+          >
+        </h1>
+      </div>
+      <nav
+        class="flex text-lg space-x-4 px-4"
+        style="color: #0048af; font-family: quicksand"
+      >
+        <a href="Home">Home</a>
+        <a href="About">About</a>
+        <a href="Blog">Blog</a>
+        <a href="Contact">Contact</a>
+      </nav>
+    </header>
 
     <!-- hero section goes here  -->
-    <div class="bg-cover bg-center h-80 w-full" style="background-image: url(summerboat.svg);"></div>
+    <section class="bg-cover bg-center h-100 w-full" style="background-image: url(summerboat.jpg);">
+      <div class="flex flex-col justify-center items-center h-full">
+        <h1 class="text-5xl">Adventure Awaits</h1>
+      </div>
+    </section>
 
     <!-- content sections go here  -->
-     <div>
-        <div></div>
-        <div></div>
-        <div></div>
-     </div>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 
-     <footer></footer>
+    <footer></footer>
   </body>
 </html>
