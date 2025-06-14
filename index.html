@@ -3,11 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
@@ -17,11 +12,16 @@
       href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Tailwind Project</title>
   </head>
   <body class="flex flex-col min-h-screen m-0 p-0">
     <header
-      class="flex flex-col items-center justify-between p-4 m-0 bg-sky-200  md:flex-row md:flex-wrap md:justify-between md:items-center"
+      class="flex flex-col items-center justify-between p-4 m-0 bg-sky-100 md:flex-row md:flex-wrap md:justify-between md:items-center"
     >
       <div class="flex items-center space-x-4">
         <img src="logo2.svg" alt="Logo" class="h-20 w-20" />
@@ -47,18 +47,71 @@
     </header>
 
     <!-- hero section goes here  -->
-    <section class="bg-cover bg-center h-100 w-full" style="background-image: url(summerboat.jpg);">
+    <section
+      class="bg-cover bg-center h-96 w-full"
+      style="background-image: url(summerboat.jpg)"
+    >
       <div class="flex flex-col justify-center items-center h-full">
-        <h1 class="text-5xl">Adventure Awaits</h1>
+        <h1
+          class="text-9xl text-right md:text-center text-white"
+          style="font-family: Outfit"
+        >
+          <span class="text-rose-500">adventure</span> awaits
+        </h1>
+        <div class="w-full flex mt-5 justify-end md:justify-center">
+          <button
+            class="bg-white hover:bg-amber-500 hover:cursor-pointer text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+          >
+            Our Recommendations
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- content sections go here  -->
-    <div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <section class="px-8 py-12 bg-sky-100">
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="camper.jpg"
+            alt="Camper Van"
+            class="w-full h-48 object-cover"
+          />
+          <h2 class="text-xl m-2">
+            The essential van life items you simply cannot live without!
+          </h2>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="train.jpg"
+            alt="Scotland Train"
+            class="w-full h-48 object-cover"
+          />
+          <h2 class="text-xl m-2">Amazing European Train Itineraries!</h2>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="maldives2.jpg"
+            alt="Maldives Resort"
+            class="w-full h-48 object-cover"
+          />
+          <h2 class="text-xl m-2">
+            We went to the Maldives bungalows (yes, those). Here are our
+            thoughts!
+          </h2>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img
+            src="pig.jpg"
+            alt="Beach Pig"
+            class="w-full h-48 object-cover"
+          />
+          <h2 class="text-xl m-2">
+           The Caribbean: The Good, The Great, and The Most Unexpected!
+          </h2>
+        </div>
+      </div>
+    </section>
 
     <footer></footer>
   </body>
