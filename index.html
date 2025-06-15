@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <title>Tailwind Project</title>
   </head>
@@ -24,13 +28,13 @@
       class="flex flex-col items-center justify-between p-4 m-0 bg-sky-100 md:flex-row md:flex-wrap md:justify-between md:items-center"
     >
       <div class="flex items-center space-x-4">
-        <img src="logo2.svg" alt="Logo" class="h-20 w-20" />
+        <img src="images.img/logo2.svg" alt="Logo" class="h-20 w-20" />
         <h1
           class="flex text-5xl text-center m-0"
           style="font-family: quicksand; color: #0048af"
         >
           Wander
-          <span class="text-orange-400" style="font-family: yellowtail"
+          <span class="text-emerald-400" style="font-family: yellowtail"
             >Lust</span
           >
         </h1>
@@ -49,7 +53,7 @@
     <!-- hero section goes here  -->
     <section
       class="bg-cover bg-center h-96 w-full"
-      style="background-image: url(summerboat.jpg)"
+      style="background-image: url(images.img/summerboat.jpg)"
     >
       <div class="flex flex-col justify-center items-center h-full">
         <h1
@@ -71,48 +75,129 @@
     <!-- content sections go here  -->
     <section class="px-8 py-12 bg-sky-100">
       <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col"
+        >
           <img
-            src="camper.jpg"
+            src="images.img/camper.jpg"
             alt="Camper Van"
             class="w-full h-48 object-cover"
           />
-          <h2 class="text-xl m-2">
+          <h2 class="text-xl m-2 p-2 flex-grow">
             The essential van life items you simply cannot live without!
           </h2>
+          <div class="p-4 mt-auto">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            >
+              <a
+                href="https://www.thepackablelife.com/travel/gear/van-life-essentials"
+                >Read More</a
+              >
+            </button>
+          </div>
         </div>
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col"
+        >
           <img
-            src="train.jpg"
+            src="images.img/train.jpg"
             alt="Scotland Train"
             class="w-full h-48 object-cover"
           />
-          <h2 class="text-xl m-2">Amazing European Train Itineraries!</h2>
+          <h2 class="text-xl m-2 p-2 flex-grow">
+            Amazing European Train Itineraries!
+          </h2>
+          <div class="p-4 mt-auto">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            >
+              <a
+                href="https://www.tourradar.com/i/europe-train-rail?srsltid=AfmBOopuKzC0GYEHuIMlZhUG9KsmWFEJxX5thBRzem2Gin7nxQoqB8y_"
+                >Read More</a
+              >
+            </button>
+          </div>
         </div>
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col"
+        >
           <img
-            src="maldives2.jpg"
+            src="images.img/maldives2.jpg"
             alt="Maldives Resort"
             class="w-full h-48 object-cover"
           />
-          <h2 class="text-xl m-2">
+          <h2 class="text-xl m-2 p-2 flex-grow">
             We went to the Maldives bungalows (yes, those). Here are our
             thoughts!
           </h2>
+          <div class="p-4 mt-auto">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            >
+              <a
+                href="https://www.thepackablelife.com/travel/gear/van-life-essentials"
+                >Read More</a
+              >
+            </button>
+          </div>
         </div>
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        <div
+          class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col"
+        >
           <img
-            src="pig.jpg"
+            src="images.img/pig.jpg"
             alt="Beach Pig"
             class="w-full h-48 object-cover"
           />
-          <h2 class="text-xl m-2">
-           The Caribbean: The Good, The Great, and The Most Unexpected!
+          <h2 class="text-xl m-2 p-2 flex-grow">
+            The Caribbean: The Good, The Great, and The Most Unexpected!
           </h2>
+          <div class="p-4 mt-auto">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            >
+              <a
+                href="https://forsomethingmore.com/caribbean-with-kids-islands-attractions-more/"
+                >Read More</a
+              >
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer></footer>
+    <footer class="bg-gray-800 text-white p-10" style="font-family: quicksand">
+      <div class="grid grid-cols-1 text-center max-w-6xl gap-8 mx-auto md:grid-cols-3">
+        <div>
+          <h5 class="mb-3 font-bold">About WanderLust</h5>
+          <ul class="space-y-2">
+            <li>Who We Are</li>
+            <li>Services Offered</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="mb-3 font-bold">Resources</h5>
+          <ul class="space-y-2">
+            <li>Blog</li>
+            <li>Packing List Links</li>
+            <li>Flight Restriction Updates</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="mb-3 font-bold">Connect</h5>
+
+          <!-- I asked ChatGPT about social media icons without having to use images and it suggested this for Tailwind CDN, an accompanying link is in the header. I'm very happy with it -->
+          <div>
+            <a href="#"><i class="fab fa-twitter hover:text-blue-400"></i></a>
+            <a href="#"><i class="fab fa-instagram hover:text-pink-400"></i></a>
+            <a href="#"><i class="fab fa-facebook hover:text-blue-600"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-12">
+        &copy Shelby Norris 2025. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
